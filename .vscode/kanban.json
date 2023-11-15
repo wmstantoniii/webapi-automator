@@ -1,0 +1,58 @@
+{
+    "title": "Kanban",
+    "cols": [
+        {
+            "title": "Bugs",
+            "tasks": [],
+            "id": "cloza6z7x000a466643p9dvus",
+            "color": "#eb144c"
+        },
+        {
+            "title": "To-Do",
+            "tasks": [
+                {
+                    "text": "run webapi from docker compose",
+                    "id": "clozafcop000i4666ezz344ht"
+                },
+                {
+                    "text": "docker build",
+                    "id": "clp0109bu000j4666d3gvuynw"
+                },
+                {
+                    "text": "add docker assets",
+                    "id": "clozadk1o000h4666usska6e8"
+                }
+            ],
+            "id": "cloza6z7x000c4666amqi0n8b",
+            "color": "#fcb900"
+        },
+        {
+            "title": "Doing",
+            "tasks": [
+                {
+                    "text": "build webapi",
+                    "id": "cloza6z7x000b4666fywelm8b"
+                },
+                {
+                    "text": "create dev branch",
+                    "id": "clozacyuq000g4666a5654f1n"
+                },
+                {
+                    "text": "initial commit to repo",
+                    "id": "clozacngf000f46667svf6pv5"
+                }
+            ],
+            "id": "cloza6z7x000d4666yokjimog",
+            "color": "#0693e3"
+        },
+        {
+            "title": "Done",
+            "tasks": [],
+            "id": "cloza6z7x000e4666cmee7mi9",
+            "color": "#00d084"
+        }
+    ],
+    "autosave": true,
+    "saveToFile": true,
+    "timestamp": 1700087919130
+}
