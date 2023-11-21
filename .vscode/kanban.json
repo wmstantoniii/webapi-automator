@@ -11,18 +11,6 @@
             "title": "To-Do",
             "tasks": [
                 {
-                    "text": "test webapi health check from docker",
-                    "id": "clp7labg3000c4666xstizm5e"
-                },
-                {
-                    "text": "add health check for webapi to docker ",
-                    "id": "clp7l9wmu000b4666hz9c1vts"
-                },
-                {
-                    "text": "add health check to webapi",
-                    "id": "clp7l9j0f000a4666vnaoa37g"
-                },
-                {
                     "text": "add Postman to compose.yml",
                     "id": "clp0gnaj3000a466686x9rdmm"
                 }
@@ -70,6 +58,18 @@
                 {
                     "text": "merge docker PR",
                     "id": "clp0kwjif000c4666g0acixlv"
+                },
+                {
+                    "text": "add health check to webapi",
+                    "id": "clp7l9j0f000a4666vnaoa37g"
+                },
+                {
+                    "text": "add health check for webapi to docker ",
+                    "id": "clp7l9wmu000b4666hz9c1vts"
+                },
+                {
+                    "text": "test webapi health check from docker",
+                    "id": "clp7labg3000c4666xstizm5e"
                 }
             ],
             "id": "cloza6z7x000e4666cmee7mi9",
@@ -78,5 +78,5 @@
     ],
     "autosave": true,
     "saveToFile": true,
-    "timestamp": 1700526036459
+    "timestamp": 1700535831679
 }

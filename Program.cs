@@ -24,6 +24,10 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
-app.MapHealthChecks("/health").AllowAnonymous();
+// idk if we really need this.  
+// this is to facilitate the health check by docker compose 
+// by the appuser account which is unprivileged
+// app.MapHealthChecks("/health").AllowAnonymous();
+app.MapHealthChecks("/health");
 
 app.Run();
