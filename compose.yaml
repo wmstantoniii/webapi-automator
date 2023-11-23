@@ -31,6 +31,9 @@ services:
     entrypoint: /bin/sh
     tty: true
     stdin_open: true
+    # volume mount Postman collection into docker container in expected location for newman
+    volumes:
+      - ./Postman:/etc/newman
 
 # The commented out section below is an example of how to define a PostgreSQL
 # database that your application can use. `depends_on` tells Docker Compose to
