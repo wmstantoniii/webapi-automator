@@ -26,7 +26,7 @@ app.UseAuthorization();
 app.MapControllers();
 // idk if we really need this.  
 // this is to facilitate the health check by docker compose 
-// by the appuser account which is unprivileged
+// using the appuser account which is unprivileged
 // app.MapHealthChecks("/health").AllowAnonymous();
 app.MapHealthChecks("/health");
 
