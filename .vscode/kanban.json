@@ -11,8 +11,8 @@
             "title": "To-Do",
             "tasks": [
                 {
-                    "text": "add Postman to compose.yml",
-                    "id": "clp0gnaj3000a466686x9rdmm"
+                    "text": "execute postman collection from interactive terminal on internal docker compose network",
+                    "id": "clp95g66x000d4666ftvs8dpq"
                 }
             ],
             "id": "cloza6z7x000c4666amqi0n8b",
@@ -20,7 +20,16 @@
         },
         {
             "title": "Doing",
-            "tasks": [],
+            "tasks": [
+                {
+                    "text": "add Postman to compose.yml",
+                    "id": "clp0gnaj3000a466686x9rdmm"
+                },
+                {
+                    "text": "access server webapi urls from postman (container to container url access)",
+                    "id": "clp95yolg000e466643e14ct0"
+                }
+            ],
             "id": "cloza6z7x000d4666yokjimog",
             "color": "#0693e3"
         },
@@ -78,5 +87,5 @@
     ],
     "autosave": true,
     "saveToFile": true,
-    "timestamp": 1700535831679
+    "timestamp": 1700621261840
 }

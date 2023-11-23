@@ -8,21 +8,29 @@
 # database or a cache. For examples, see the Awesome Compose repository:
 # https://github.com/docker/awesome-compose
 services:
-  server:
+  webapi:
     build:
       context: .
       target: final
-    ports:
-      - 8080:80
-    # try using expose instead to expose port 80 to postman
-    # need a healthcheck or readiness check
-    # the postman service will depend on the webapi instead of the other way around
-    # we can override the startup command for postman
+
+    # expose port 80 to postman/newman for running API collection
+    expose: 
+      - 80
     healthcheck:
       test: "wget --no-verbose --tries=1 --spider http://localhost/health || exit 1"
       interval: 10s
       timeout: 5s
       retries: 5
+
+  webapi-automator:
+    image: postman/newman:alpine
+    depends_on:
+      webapi:
+        condition: service_healthy
+    # for testing (from docker exec, "wget --spider http://server/WeatherForecast")
+    entrypoint: /bin/sh
+    tty: true
+    stdin_open: true
 
 # The commented out section below is an example of how to define a PostgreSQL
 # database that your application can use. `depends_on` tells Docker Compose to
