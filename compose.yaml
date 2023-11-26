@@ -18,22 +18,25 @@ services:
       - 80
     healthcheck:
       test: "wget --no-verbose --tries=1 --spider http://localhost/health || exit 1"
-      interval: 10s
+      interval: 1s
       timeout: 5s
       retries: 5
 
-  webapi-automator:
+  automator:
     image: postman/newman:alpine
     depends_on:
       webapi:
         condition: service_healthy
-    # for testing (from docker exec, "wget --spider http://server/WeatherForecast")
-    entrypoint: /bin/sh
-    tty: true
-    stdin_open: true
     # volume mount Postman collection into docker container in expected location for newman
     volumes:
       - ./Postman:/etc/newman
+    # set the Postman collection environment variable "baseUrl" to be the service name in this file, "webapi"
+    # and run the following command from the default entrypoint, newman
+    command: ["run", "--env-var", "baseUrl=webapi", "BillDemoApi.postman_collection.json"] 
+    # for testing, override newman as the entrypoint (from docker exec, "wget --spider http://server/WeatherForecast")
+    # entrypoint: /bin/sh
+    # tty: true
+    # stdin_open: true
 
 # The commented out section below is an example of how to define a PostgreSQL
 # database that your application can use. `depends_on` tells Docker Compose to

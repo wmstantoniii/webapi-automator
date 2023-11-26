@@ -14,17 +14,12 @@ postman collection run Collections/BillDemoApi.postman_collection.json
 postman collection run Collections/BillDemoApi.postman_collection.json -e Environments/Development.json
 ```
 
-### launch orchestrated containers in an internal docker network
+### launch containers using docker compose, run the automator, return the exit code from the automator
 ```
-docker compose up --build -d
+docker compose up --build --exit-code-from automator
 ```
 
-### run the postman collection within the docker container for postman/newman (from exec)
-##### baseUrl is an environment variable used within the postman_collection; 
-##### refers to the webapi service in compose.yml
-```
-newman run --env-var "baseUrl=webapi" BillDemoApi.postman_collection.json
-```
+
 
 
 
