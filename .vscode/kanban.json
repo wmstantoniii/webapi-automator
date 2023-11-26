@@ -11,7 +11,7 @@
             "title": "To-Do",
             "tasks": [
                 {
-                    "text": "create CI workflow",
+                    "text": "create a CI workflow somewhere (gitlab or github actions) from the docker compose.yml",
                     "id": "clpanmsv3000f4666ev1o9j61"
                 }
             ],
@@ -82,6 +82,14 @@
                 {
                     "text": "execute postman collection from interactive terminal on internal docker compose network",
                     "id": "clp95g66x000d4666ftvs8dpq"
+                },
+                {
+                    "text": "return an exit code indicating success or failure from the automator",
+                    "id": "clpeld7tj000g466676fzuesu"
+                },
+                {
+                    "text": "return an exit code indicating success or failure from docker compose",
+                    "id": "clpeler6t000h4666n1lbk47j"
                 }
             ],
             "id": "cloza6z7x000e4666cmee7mi9",
@@ -90,5 +98,5 @@
     ],
     "autosave": true,
     "saveToFile": true,
-    "timestamp": 1700711371498
+    "timestamp": 1700957158527
 }
