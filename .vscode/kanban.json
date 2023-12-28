@@ -2,8 +2,17 @@
     "title": "Kanban",
     "cols": [
         {
-            "title": "Bugs",
-            "tasks": [],
+            "title": "Backlog",
+            "tasks": [
+                {
+                    "text": "craig docker email details on error",
+                    "id": "clqh2joad000c4666rxg8ahw9"
+                },
+                {
+                    "text": "Barbell tracker",
+                    "id": "clqh2dlf3000b4666hdex5vmh"
+                }
+            ],
             "id": "cloza6z7x000a466643p9dvus",
             "color": "#eb144c"
         },
@@ -11,7 +20,7 @@
             "title": "To-Do",
             "tasks": [
                 {
-                    "text": "create a CI workflow somewhere (gitlab or github actions) from the docker compose.yml",
+                    "text": "create a CI workflow somewhere (gitlab, github actions, jenkins) from the docker compose.yml",
                     "id": "clpanmsv3000f4666ev1o9j61"
                 }
             ],
@@ -98,5 +107,5 @@
     ],
     "autosave": true,
     "saveToFile": true,
-    "timestamp": 1700957158527
+    "timestamp": 1703276001258
 }
